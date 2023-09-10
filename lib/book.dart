@@ -8,7 +8,7 @@ class BookGrid extends StatelessWidget {
       Volume: 'เล่ม0',
       Writer: 'เกเงะ อากูตามิ',
       released: 2019,
-      price: 68,
+      price: '68',
       img: 'lib/images/0.png',
     ),
      Book(
@@ -16,7 +16,7 @@ class BookGrid extends StatelessWidget {
       Volume: 'เล่ม1',
       Writer: 'เกเงะ อากูตามิ',
       released: 2019,
-      price: 68,
+      price: '68',
       img: 'lib/images/1.png',
     ),
     Book(
@@ -24,7 +24,7 @@ class BookGrid extends StatelessWidget {
       Volume: 'เล่ม2',
       Writer: 'เกเงะ อากูตามิ',
       released: 2019,
-      price: 68,
+      price: '68',
       img: 'lib/images/2.png',
     ),
     Book(
@@ -32,7 +32,7 @@ class BookGrid extends StatelessWidget {
       Volume: 'เล่ม3',
       Writer: 'เกเงะ อากูตามิ',
       released: 2019,
-      price: 68,
+      price: '68',
       img: 'lib/images/3.png',
     ),
     Book(
@@ -40,7 +40,7 @@ class BookGrid extends StatelessWidget {
       Volume: 'เล่ม4',
       Writer: 'เกเงะ อากูตามิ',
       released: 2019,
-      price: 68,
+      price: '68',
       img: 'lib/images/4.png',
     ),
     Book(
@@ -48,7 +48,7 @@ class BookGrid extends StatelessWidget {
       Volume: 'เล่ม5',
       Writer: 'เกเงะ อากูตามิ',
       released: 2019,
-      price: 68,
+      price: '68',
       img: 'lib/images/5.png',
     ),
     Book(
@@ -56,7 +56,7 @@ class BookGrid extends StatelessWidget {
       Volume: 'เล่ม6',
       Writer: 'เกเงะ อากูตามิ',
       released: 2019,
-      price: 68,
+      price: '68',
       img: 'lib/images/6.png',
     ),
     Book(
@@ -64,7 +64,7 @@ class BookGrid extends StatelessWidget {
       Volume: 'เล่ม7',
       Writer: 'เกเงะ อากูตามิ',
       released: 2019,
-      price: 68,
+      price: '68',
       img: 'lib/images/7.png',
     ),
     Book(
@@ -72,7 +72,7 @@ class BookGrid extends StatelessWidget {
       Volume: 'เล่ม8',
       Writer: 'เกเงะ อากูตามิ',
       released: 2019,
-      price: 68,
+      price: '68',
       img: 'lib/images/8.png',
     ),
     Book(
@@ -80,7 +80,7 @@ class BookGrid extends StatelessWidget {
       Volume: 'เล่ม9',
       Writer: 'เกเงะ อากูตามิ',
       released: 2019,
-      price: 68,
+      price: '68',
       img: 'lib/images/9.png',
     ),
   ];
@@ -146,8 +146,42 @@ class BookGrid extends StatelessWidget {
                 ),
                
                   ],
-                )
-               
+                ),
+               Column(
+                 children: [
+                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                      "ราคา",
+                      style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                      ),
+                      
+                    ),
+                    SizedBox(width: 2),
+                      Text(
+                      Books[index].price,
+                      style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                      ),
+                      
+                    ),
+                    SizedBox(width: 2),
+                     Text(
+                      "บาท",
+                      style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                      ),
+                      
+                    ),
+                    ],
+                   ),
+                 ],
+               )
 
               ],
             );
