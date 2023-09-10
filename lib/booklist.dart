@@ -3,7 +3,7 @@ class Book {
   String Volume;
   String Writer;
   int released;
-  int price;
+  String price;
   String img;
 
   Book({
